@@ -35,7 +35,7 @@ SubProceso pro10()
 	Escribir "El nombre tiene ", vocal," Vocales";
 	Escribir "El nombre tiene ", consonates," consonates";
 	Escribir "El nombre tiene ", espacios," espacios en blanco";
-	Escribir "El nombre tiene ", extrano," cracteres extraños";
+	Escribir "El nombre tiene ", extrano," caracteres extraÃ±os";
 FinSubProceso
 
 Proceso cuenta_letras
