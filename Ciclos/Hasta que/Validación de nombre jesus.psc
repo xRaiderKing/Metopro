@@ -1,18 +1,24 @@
 SubProceso vale()
-	Definir name como cadena;
-	Definir l Como Entero;
 	Escribir "=========================================";
 	Escribir "       Jesus Yael Padron Grimaldo";
 	Escribir "       Algoritmo:Validacion Nombre";
 	Escribir "=========================================";
 	Escribir " ";
+	Definir name como caracter;
+	Definir l Como real;
 	Repetir
-		Escribir Sin Saltar "Ingresa tu nombre, este debe de contener +3 Letras";
+		Escribir "====================================================";
+		Escribir "Ingresa tu nombre, este debe de contener +3 Letras";
 		Leer name;
+		Escribir "====================================================";
 		l <- Longitud(name);
 	Hasta Que l >= 3 y l <= 50
-	Escribir "Dato correcto";
+	Escribir "";
+	Escribir "====================================================";
+	Escribir "                   Dato correcto";
+	Escribir "====================================================";
 	Escribir "Presiona una tecla para finalizar proceso";
+	Escribir "====================================================";
 	Esperar Tecla; 
 FinSubProceso
 
