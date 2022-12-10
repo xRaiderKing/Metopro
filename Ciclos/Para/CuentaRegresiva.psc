@@ -17,7 +17,10 @@ SubProceso reloj()
 	
 	si h < 24 y h >= 0 y m <= 59 y m >= 0 y s <= 59 y s >= 0 Entonces
 		Limpiar Pantalla;
+		Escribir "==================";
+		Escribir "Tiempo restante";
 		Escribir h," : ",m," : ",s;
+		Escribir "==================";
 		Esperar 1 Segundos;
 		si s = 0 Entonces
 			si m = 0 Entonces
@@ -41,7 +44,10 @@ SubProceso reloj()
 			FinSi
 			si s >= 0 Entonces
 				Limpiar Pantalla;
+				Escribir "==================";
+				Escribir "Tiempo restante";
 				Escribir h," : ",m," : ",s;
+				Escribir "==================";
 				Esperar 1 Segundos;
 				s <- s - 1;
 				si s < 0 Entonces
@@ -49,11 +55,17 @@ SubProceso reloj()
 				FinSi
 				si s = 0 y m >= 0 Entonces
 					Limpiar Pantalla;
+					Escribir "==================";
+					Escribir "Tiempo restante";
 					Escribir h," : ",m," : ",s;
+					Escribir "==================";
 					Esperar 1 Segundos;
 					si s = 0 y m = 0 y h > 0 Entonces
 						Limpiar Pantalla;
+						Escribir "==================";
+						Escribir "Tiempo restante";
 						Escribir h," : ",m," : ",s;
+						Escribir "==================";
 						Esperar 1 Segundos;
 						h <- h -1;
 						m <- 59;
@@ -68,7 +80,10 @@ SubProceso reloj()
 			FinSi
 			Limpiar Pantalla;
 			si s = 0 Entonces
+				Escribir "==================";
+				Escribir "Tiempo restante";
 				Escribir h," : ",m," : ",s;
+				Escribir "==================";
 			FinSi
 		FinPara
 	SiNo
