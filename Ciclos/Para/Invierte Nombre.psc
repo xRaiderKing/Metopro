@@ -5,8 +5,8 @@ SubProceso cambiar()
 	Escribir "            Ingresa tu nombre ";
 	Escribir "========================================";
 	Leer name;
-	name <- Mayusculas(name);
-	Escribir Sin Saltar "Tu nombre invertido es: ";
+	name <- Minusculas(name);
+	Escribir "Tu nombre invertido es: ";
 	Para v <- Longitud(name) Hasta 0 Con Paso -1 Hacer
 		Escribir Sin Saltar Subcadena(name,v,v);
 	FinPara
