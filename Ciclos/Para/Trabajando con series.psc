@@ -12,51 +12,62 @@ SubProceso datos()
 	Escribir "";
 FinSubProceso
 Proceso Trabajando_con_series
-	Definir c, tipo,tomo, val1,suma, val2, contador,f, number,termino1, termino2, termino3 Como Real;
+	Definir n,h1, p2, k3,c, type, val1,suma, val2, cuenta,f,tomo Como Real;
 	datos();
-	Escribir "En breves le solicitaremos los datos...";
+	Escribir "========================================";
+	Escribir " En breves le solicitaremos los datos...";
+	Escribir "========================================";
 	Esperar 4 Segundos;
 	Limpiar Pantalla;
-	Escribir "Ingresa el tipo de serie [I,II,III,IV]";
-	Leer tipo;
+	Escribir "========================================";
+	Escribir " Ingresa el tipo de serie [I,II,III,IV]";
+	Escribir "========================================";
+	Leer type;
 	Escribir "";
-	Segun tipo Hacer
+	Segun type Hacer
 		1:
+			Escribir "===================";
 			Escribir "Igresa la cantidad";
+			Escribir "===================";
 			Leer c;
 			Para c <- c Hasta c * 100 Con Paso c Hacer
 				Escribir Sin Saltar c,", ";
 			FinPara
 		2:
+			Escribir "===================";
 			Escribir "Igresa la cantidad";
+			Escribir "===================";
 			Leer c;
-			Para c <- c Hasta c / 100 Con Paso -c/100 Hacer
+			Para c <- c Hasta c / 100 Con Paso -c / 100 Hacer
 				Escribir Sin Saltar c,", ";
 			FinPara
 		3:
-			Escribir sin saltar " Ingresa el n término";
-			leer number;
-			termino1 <- 1;
-			termino2 <- 1;
-			Para contador<-1 Hasta number - 2 Con Paso 1 Hacer
-				
-				termino3 <- termino2 + termino1;
-				termino1 <- termino2;
-				termino2 <- termino3;
-				Escribir Sin Saltar  termino2 , " ";
+			Escribir "=====================";
+			Escribir " Ingresa el n tÃ©rmino";
+			Escribir "=====================";
+			leer n;
+			h1 <- 1;
+			p2 <- 1;
+			Para cuenta <- 1 Hasta n - 2 Con Paso 1 Hacer
+				k3 <- p2 + h1;
+				h1 <- p2;
+				p2 <- k3;
+				Escribir Sin Saltar  p2 , " ";
 				
 			FinPara
 		4:
-			Escribir sin saltar " Ingresa el número";
-			leer number;
+			Escribir "=====================";
+			Escribir "  Ingresa el nÃºmero";
+			Escribir "=====================";
+			leer n;
 			f <- 1;
 			Escribir Sin Saltar " ";
-			Para contador<-number Hasta 1 Con Paso -1 Hacer
-				f <- f * contador;
-				si contador >= 2 entonces
-					Escribir Sin Saltar  contador , " * ";
+			Para cuenta <- n Hasta 1 Con Paso -1 Hacer
+				f <- f * cuenta;
+				si cuenta >= 2 entonces
+					Escribir Sin Saltar  cuenta , " * ";
 				SiNo
-					Escribir Sin Saltar  contador;
+					Escribir Sin Saltar  cuenta;
 				Finsi		
 			FinPara
 			Escribir " = ", f;
@@ -64,4 +75,3 @@ Proceso Trabajando_con_series
 		De Otro Modo:
 			Escribir "El tipo de serie es invalida";
 	FinSegun
-FinProceso
