@@ -13,7 +13,9 @@ SubProceso cal1()
 		a <- a +1;
 		r <- r + 7;
 	FinMientras
+	Escribir "====================================================";
 	Escribir "Presione cualquier tecla para finalizar el proceso";
+	Escribir "====================================================";
 	Esperar Tecla;
 FinSubProceso
 Proceso Calificacion
