@@ -1,17 +1,17 @@
 SubProceso correopro()
-	Definir correo, co como cadena;
+	Definir co1, co como cadena;
 	Definir a,b,f,l Como Entero;
 	Escribir "=========================================";
 	Escribir "    Ingresa tu correo electronico";
 	Escribir "=========================================";
-	leer correo;
-	l <- Longitud(correo);
+	leer co1;
+	l <- Longitud(co1);
 	co <- "@hotmail.com";
 	a <- 0;
 	b <- 12;
 	f <- 0;
 	Mientras a <= l Hacer
-		Si Subcadena(co,a,a) = Subcadena(correo,l-b,l-b) Entonces
+		Si Subcadena(co,a,a) = Subcadena(co1,l-b,l-b) Entonces
 			f <- f;
 		SiNo
 			f <- f +1;
@@ -36,5 +36,5 @@ Proceso ValidacionDeCorre
 	Escribir "        Algoritmo Validar Correo";
 	Escribir "=========================================";
 	Escribir "";
-correopro();
+	correopro();
 FinProceso
