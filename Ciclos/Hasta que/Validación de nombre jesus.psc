@@ -17,7 +17,7 @@ SubProceso vale()
 	Escribir "====================================================";
 	Escribir "                   Dato correcto";
 	Escribir "====================================================";
-	Escribir "Presiona una tecla para finalizar proceso";
+	Escribir "      Presiona una tecla para finalizar proceso";
 	Escribir "====================================================";
 	Esperar Tecla; 
 FinSubProceso
